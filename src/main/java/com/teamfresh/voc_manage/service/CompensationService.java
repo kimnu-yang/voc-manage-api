@@ -1,6 +1,7 @@
 package com.teamfresh.voc_manage.service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.BeanUtils;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.teamfresh.voc_manage.model.*;
 import com.teamfresh.voc_manage.model.request.*;
+import com.teamfresh.voc_manage.model.response.CompensationResponse;
 import com.teamfresh.voc_manage.repository.*;
 
 import lombok.RequiredArgsConstructor;
@@ -28,5 +30,9 @@ public class CompensationService {
         compensation.setRegDate(LocalDateTime.now());
 
         return compensationRepository.save(compensation);
+    }
+
+    public List<CompensationResponse> compensationList() {
+        return compensationRepository.findForCompensationList();
     }
 }
