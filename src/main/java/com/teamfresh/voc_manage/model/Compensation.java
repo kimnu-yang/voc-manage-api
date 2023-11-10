@@ -17,6 +17,7 @@ public class Compensation {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private Integer amount;
     private String detail;
     private LocalDateTime regDate;
 
