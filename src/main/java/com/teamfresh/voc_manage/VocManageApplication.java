@@ -9,5 +9,4 @@ public class VocManageApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VocManageApplication.class, args);
 	}
-
 }
