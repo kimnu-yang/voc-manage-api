@@ -16,7 +16,7 @@ public class Worker {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private String tel;
+    private String contact;
 
     @ManyToOne
     @JoinColumn(name = "transportId")
