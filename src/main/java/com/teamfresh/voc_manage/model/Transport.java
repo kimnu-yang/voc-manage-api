@@ -15,5 +15,5 @@ public class Transport {
     private Long id;
     private String name;
     private String manager;
-    private String tel;
+    private String contact;
 }

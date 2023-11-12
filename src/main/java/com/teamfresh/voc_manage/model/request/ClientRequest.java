@@ -8,6 +8,6 @@ public class ClientRequest {
     public static class Create {
         private String name;
         private String manager;
-        private String tel;
+        private String contact;
     }
 }

@@ -7,7 +7,7 @@ public class WorkerRequest {
     @Data
     public static class Create {
         private String name;
-        private String tel;
+        private String contact;
         private Long transportId;
     }
 }
