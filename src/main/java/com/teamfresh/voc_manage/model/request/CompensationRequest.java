@@ -7,6 +7,7 @@ public class CompensationRequest {
     @Data
     public static class Create {
         private String detail;
+        private Integer amount;
         private Long vocId;
     }
 }

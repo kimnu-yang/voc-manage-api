@@ -19,7 +19,7 @@ public class DeliveryController {
 
     /*
      * 배송정보 생성
-     * POST /api/client
+     * POST /api/delivery
      * :고객사,운송직원과 연결된 배송 정보를 데이터베이스에 추가
      */
     @PostMapping("")
